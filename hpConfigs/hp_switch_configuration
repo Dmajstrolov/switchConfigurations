@@ -1,0 +1,13 @@
+; J9085A Configuration Editor; Created on release #R.11.122
+
+hostname "HP_switch" 
+ip default-gateway 192.168.1.1 
+ip routing 
+snmp-server community "public" Unrestricted 
+vlan 1 
+   name "DEFAULT_VLAN" 
+   untagged 1-28 
+   ip address 192.168.1.200 255.255.255.0 
+   exit 
+password operator
+
